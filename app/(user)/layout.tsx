@@ -1,4 +1,4 @@
-import { UserHeader } from "@/features/user/components/header"
+import { UserHeader } from "@/features/user/layout/header"
 
 export default function UserLayout({
   children, // will be a page or nested layout
@@ -6,7 +6,7 @@ export default function UserLayout({
   children: React.ReactNode
 }) {
   return (
-    <div className="relative flex min-h-screen flex-col">
+    <div className="relative flex flex-col min-h-screen">
       <UserHeader />
       <div className="flex-1">{children}</div>
     </div>
